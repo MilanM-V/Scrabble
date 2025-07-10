@@ -1,0 +1,113 @@
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" type="image/x-icon" href=".\images\image_site_logo.ico">
+	<title>Projet: le mot le plus long</title>
+	<script src="https://kit.fontawesome.com/62f8038c58.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<h3><br>Auteur:<br>Axel Nodin<br> Milan Marchand -- Valat<br>Gaëtan Thomas</br></h3>
+		<img src=".\images\image_site_logo.png" alt="logo">
+		<h1 class="ml5">
+		<span class="text-wrapper">
+			<span class="line line1"></span>
+			<span class="letters letters-left">Projet: le mot le plus long</span>
+			<span class="line line2"></span>
+		</span>
+		</h1>
+	</header>
+	<nav>
+		<a href="#règles du jeu">Règles <span></span></a>
+		<a href="#Visuel">Visuel <span></span></a>
+		<a href="./html/page2.html #etape">Etapes du projet <span></span></a>
+		<a href="./html/page2.html #problèmes">Problèmes rencontrés <span></span></a>
+		<a href="./html/page3.html #Explication">Explication du code<span></span></a>
+		<a href="./html/page3.html #amelioration">Amelioration posssible<span></span></a>
+		<a href="./html/page3.html #carrousel">Carrousel<span></span></a>
+	</nav>
+	<main>
+	<div class="intro">
+		<section id="règles du jeu">
+			<h3>Dictionnaire</h3>
+			<p>Les dictionnaires disponible pour "Le Mot le plus long" sont :
+			</p>
+			<P>- Français, Anglais, Italien, et indonesien
+			</P>
+			<h3>Règles du Jeu</h3>
+			<p>
+				- Le but du jeu 'Le mot le plus long' est de, à partir de 9 lettres tirées au hasard, construire le mot le plus long que l'on puisse imaginer. Si on ne peut pas trouver un mot en 9, on cherche en 8 lettres et ainsi de suite, jusqu'à ce que l'on trouve.
+				</br>- Le tirage de lettres se fait au hasard, on demande au joueur quel type de lettre il désire (voyelle ou consonne) ainsi de suite jusqu'à ce qu'il en ait 9. Il lui faut minimum 3 voyelles.
+			</p>
+			<h3>Explication des modes de jeu :</h3>
+			<p>
+				<b>- Marathon</b> : Le mode marathon consiste à trouver le maximum de mot en 300 secondes.</br>- <b>Sprint :</b> Le mode sprint consiste à trouver un mot le plus rapidement possible en 50 secondes.
+			</p>
+			<h3>Mot autorisé :</h3>
+			<p>
+				Les mots autorisés peuvent inclure des noms communs, des verbes, des adjectifs, des adverbes et d'autres types de mots reconnus présents dans le dictionnaire sélectionné.
+			</p>
+		</section>
+	</div>
+	<div id="Visuel" class="container-wrapper">
+		<div class="container">
+			<div class="card">
+				<div class="front-side">	
+					<div class="Selection">
+						<img src="./images/select.png" alt="Image data scientist">
+					</div>
+				</div>				
+				<div class="back-side">
+					<h4>Selection de lettre</h4>
+					<p>Cette page sert à sélectionner les voyelles ou les consonnes pour créer un mot, puis à sélectionner le nombre de lettres que va contenir votre mot.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<div class="front-side">
+					<div class="creation">
+						<img src="./images/crea.png" alt="Image data scientist">
+					</div>
+				</div>				
+				<div class="back-side">
+					<h4>Création du mot</h4>
+					<p>Cette page sert à créer le mot de votre choix. Vous devez cliquer-glisser les lettres dans les emplacements dans l'ordre (de gauche à droite), puis cliquer sur 'valider' pour vérifier l'existence du mot. Si le mot n'existe pas, vous pouvez appuyer sur le bouton 'réinitialiser' et essayer un nouveau mot.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="card">
+				<div class="front-side">
+					<div class="fin">
+						<img src="./images/fin.png" alt="Image data scientist">
+					</div>
+				</div>				
+				<div class="back-side">
+					<h4>Page finale</h4>
+					<p>Cette page vous montre le mot que vous avez trouvé (ou les mots en fonction du mode de jeu) et le nombre de points que vous avez faits. Si vous êtes en mode 'sprint', il vous montre aussi le temps que vous avez mis pour trouver le mot et les mots que vous auriez pu trouver avec ces lettres.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<button class="button-82-pushable" role="button" onclick="telecharger()">
+			<span class="button-82-shadow"></span>
+			<span class="button-82-edge"></span>
+			<span class="button-82-front text">
+			  Télécharger Le jeu
+			</span>
+		  </button>	  
+		<div class="page_suivante1">
+			<a href=./html/page2.html class="button-74" role="button">Page suivante</a>
+		</div>
+	</footer>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="./js/main.js"></script>
+</body>
+</html>

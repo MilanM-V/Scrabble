@@ -1,0 +1,66 @@
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="..\images\image_site_logo.ico">
+	<title>Projet: le mot le plus long</title>
+	<script src="https://kit.fontawesome.com/62f8038c58.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<h3><br>Auteur:<br>Axel Nodin<br> Milan Marchand -- Valat<br>Gaëtan Thomas</br></h3>
+		<img src="..\images\image_site_logo.png" alt="logo">
+		<h1 class="ml5">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters letters-left">Projet: le mot le plus long</span>
+                <span class="line line2"></span>
+            </span>
+        </h1>
+	</header>
+	<nav>
+		<a href="../index.html #règles du jeu">Règles <span></span></a>
+		<a href="../index.html #Visuel">Visuel <span></span></a>
+		<a href="./page2.html #etape">Etapes du projet <span></span></a>
+		<a href="./page2.html #problèmes">Problèmes rencontrés <span></span></a>
+		<a href="#Explication">Explication du code<span></span></a>
+		<a href="#amelioration">Amelioration posssible<span></span></a>
+		<a href="#carrousel">Carrousel<span></span></a>
+	</nav>
+	<main>
+        <div class="Explication" id="Explication">
+            <h2>Expliquation du Code</h2>
+            <p>Le code crée plusieur page Tkinter chacune par le biais de fonction sauf le page de connexion qui est la pge principale au qu'elle toute les page sont relier grace à TopLevel.</br>
+            Il y a d'autres fonction qui permette par exemple de recommencer, de retourner a l'accueil, de changer de mode de jeu, d'initialiser les zone de drag et drop, ou de reinitialiser le jeu.</br>
+            Il y aussi une class qui créer/permet le system de drag and drop et enregistre les lettres choisies dans la variable roster  pour permettre la vérification du mots dans le dictionnaires</p>
+        </div>
+            
+        <div class="amelioration" id="amelioration">
+            <h2>Pistes d'amélioration</h2>
+            <h4>Comme piste d'amelioration nous voyons:</h4>
+            <p>
+            - De pouvoir mettre les lettres dans l'ordre que l'ons veut dans la page de création de mot.</br>
+            - Un meilleur visuel.</br>
+            - Une traduction des texte en fonction de lalangue choisies.</br>
+            - Une optimisation du code pour ameliorer ça vitesse.</br>
+            - Et un meilleur visuel du chrono sur la page de création de mot lorsque qu'il passe en dessous de 10sec.
+            </p>
+        </div>
+        <div class="carrousel" id="carrousel">
+            <img src="../images/connexion.png" alt=" page de connexion" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+            <div id="suivant" onclick="ChangeSlide(1)">></div>
+        </div>
+    </main>
+    <footer>
+        <div class="page_precedente2">
+			<a href=../index.html class="button-74" role="button">Page précedente</a>
+		</div>
+    </footer>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+<script src="../js/main.js"></script>
+</body>
+</html>
